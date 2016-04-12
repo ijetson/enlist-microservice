@@ -4,25 +4,26 @@ import java.sql.Date;
 
 public class Subject {
 	
-	private Integer subjectId;
-	private Integer CourseId;
+	private long subjectId;
+	private long CourseId;
 	private String Subject;
 	private String Code;
 	private String Description;
 	private Integer InstructorId;
 	private Integer RoomId;
 	private Integer ScheduleId;
+	private Integer Limit;
 	private String LastModBy;
 	private Date LastModDate;
 
 	
-	public Integer getSubjectId() {
+	public long getSubjectId() {
 		return subjectId;
 	}
 	public void setSubjectId(Integer subjectId) {
 		this.subjectId = subjectId;
 	}
-	public Integer getCourseId() {
+	public long getCourseId() {
 		return CourseId;
 	}
 	public void setCourseId(Integer courseId) {
@@ -61,20 +62,27 @@ public class Subject {
 	public Integer getScheduleId() {
 		return ScheduleId;
 	}
+	
+	public Integer getLimit() {
+		return Limit;
+	}
+	public void setLimit(Integer limit) {
+		Limit = limit;
+	}
 	public void setScheduleId(Integer scheduleId) {
 		ScheduleId = scheduleId;
 	}
 	public String getLastModBy() {
-		return lastModBy;
+		return LastModBy;
 	}
 	public void setLastModBy(String lastModBy) {
-		this.lastModBy = lastModBy;
+		this.LastModBy = lastModBy;
 	}
 	public Date getLastModDate() {
-		return lastModDate;
+		return LastModDate;
 	}
 	public void setLastModDate(Date lastModDate) {
-		this.lastModDate = lastModDate;
+		this.LastModDate = lastModDate;
 	}
 	
 	

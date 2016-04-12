@@ -4,17 +4,29 @@ import java.sql.Date;
 
 public class Room {
 	
-	private Integer RoomId;
+	private long RoomId;
 	private String LastModBy;
 	private Date LastModDate;
-
-	public Integer getRoomId() {
+	public long getRoomId() {
 		return RoomId;
 	}
-
-	public void setRoomId(Integer roomId) {
+	public void setRoomId(long roomId) {
 		RoomId = roomId;
 	}
+	public String getLastModBy() {
+		return LastModBy;
+	}
+	public void setLastModBy(String lastModBy) {
+		LastModBy = lastModBy;
+	}
+	public Date getLastModDate() {
+		return LastModDate;
+	}
+	public void setLastModDate(Date lastModDate) {
+		LastModDate = lastModDate;
+	}
+
+
 	
 	
 
